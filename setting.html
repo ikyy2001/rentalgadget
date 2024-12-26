@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan - Kayy Rental</title>
+    <link rel="stylesheet" href="seller center.css">
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="seller-dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="image/s" alt="Logo" class="logo">
+                <h2>Seller Center</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="seller center.html"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="product.html"><i class="fas fa-box"></i> Produk</a>
+                    </li>
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-cart"></i> Pesanan</a>
+                    </li>
+                    <li>
+                        <a href="pengiriman.html"><i class="fas fa-truck"></i> Pengiriman</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-line"></i> Analitik</a>
+                    </li>
+                    <li>
+                        <a href="keuangan.html"><i class="fas fa-wallet"></i> Keuangan</a>
+                    </li>
+                    <li>
+                        <a href="setting.html"><i class="fas fa-cog"></i> Pengaturan</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <header class="top-nav">
+                <div class="search-bar">
+                    <input type="search" placeholder="Cari pengaturan...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="nav-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile">
+                        <img src="profile.jpg" alt="Profile">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Settings Content -->
+            <div class="settings-content">
+                <!-- Settings Navigation -->
+                <div class="settings-nav">
+                    <button class="settings-tab active" data-tab="profile">
+                        <i class="fas fa-user"></i> Profil Toko
+                    </button>
+                    <button class="settings-tab" data-tab="security">
+                        <i class="fas fa-shield-alt"></i> Keamanan
+                    </button>
+                    <button class="settings-tab" data-tab="notifications">
+                        <i class="fas fa-bell"></i> Notifikasi
+                    </button>
+                    <button class="settings-tab" data-tab="payment">
+                        <i class="fas fa-credit-card"></i> Pembayaran
+                    </button>
+                </div>
+
+                <!-- Profile Settings -->
+                <div class="settings-section active" id="profile-settings">
+                    <div class="section-header">
+                        <h2>Profil Toko</h2>
+                        <button class="btn-primary">Simpan Perubahan</button>
+                    </div>
+                    
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <div class="profile-image-upload">
+                                <img src="store-profile.jpg" alt="Store Profile">
+                                <button class="btn-upload">
+                                    <i class="fas fa-camera"></i> Ubah Foto
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nama Toko</label>
+                            <input type="text" value="Kayy Rental Store" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Deskripsi</label>
+                            <textarea class="form-control" rows="4">Toko rental elektronik terpercaya dengan berbagai pilihan gadget modern.</textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Bisnis</label>
+                                <input type="email" value="contact@kayyrental.com" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon</label>
+                                <input type="tel" value="081234567890" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Alamat</label>
+                            <textarea class="form-control" rows="3">Jl. Contoh No. 123, Kota Contoh, 12345</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Settings -->
+                <div class="settings-section" id="security-settings">
+                    <div class="section-header">
+                        <h2>Keamanan</h2>
+                        <button class="btn-primary">Simpan Perubahan</button>
+                    </div>
+                    
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <label>Password Saat Ini</label>
+                            <input type="password" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password Baru</label>
+                            <input type="password" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Konfirmasi Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                Aktifkan Autentikasi Dua Faktor
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="settings-section" id="notification-settings">
+                    <div class="section-header">
+                        <h2>Notifikasi</h2>
+                        <button class="btn-primary">Simpan Perubahan</button>
+                    </div>
+                    
+                    <div class="settings-form">
+                        <div class="notification-group">
+                            <h3>Email Notifikasi</h3>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    Pesanan Baru
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    Pembayaran Masuk
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    Ulasan Pelanggan
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="notification-group">
+                            <h3>Notifikasi Aplikasi</h3>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    Status Pesanan
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    Pesan Pelanggan
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    Promosi dan Update
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Settings -->
+                <div class="settings-section" id="payment-settings">
+                    <div class="section-header">
+                        <h2>Pembayaran</h2>
+                        <button class="btn-primary">Simpan Perubahan</button>
+                    </div>
+                    
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <label>Bank</label>
+                            <select class="form-control">
+                                <option>BCA</option>
+                                <option>Mandiri</option>
+                                <option>BNI</option>
+                                <option>BRI</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nomor Rekening</label>
+                            <input type="text" class="form-control" value="1234567890">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nama Pemilik Rekening</label>
+                            <input type="text" class="form-control" value="John Doe">
+                        </div>
+
+                        <div class="payment-methods">
+                            <h3>Metode Pembayaran yang Diterima</h3>
+                            <div class="payment-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Transfer Bank
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> E-Wallet
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Kartu Kredit
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> QRIS
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Kayy Rental</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="seller-dashboard">
+        <!-- Sidebar - Same as main dashboard -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="image/s" alt="Logo" class="logo">
+                <h2>Seller Center</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="seller center.html"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="product.html"><i class="fas fa-box"></i> Produk</a>
+                    </li>
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-cart"></i> Pesanan</a>
+                    </li>
+                    <li>
+                        <a href="pengiriman.html"><i class="fas fa-truck"></i> Pengiriman</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-line"></i> Analitik</a>
+                    </li>
+                    <li>
+                        <a href="keuangan.html"><i class="fas fa-wallet"></i> Keuangan</a>
+                    </li>
+                    <li>
+                        <a href="setting.html"><i class="fas fa-cog"></i> Pengaturan</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="search-bar">
+                    <input type="search" placeholder="Cari produk...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="nav-right">
+                    <button class="btn-primary">
+                        <i class="fas fa-plus"></i> Tambah Produk
+                    </button>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile">
+                        <img src="image/sekay.png" alt="Profile">
+                        <span>Erlangga M Hafiz</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="products-header">
+                <div class="filters">
+                    <select class="filter-select">
+                        <option>Semua Kategori</option>
+                        <option>Elektronik</option>
+                        <option>Kamera</option>
+                        <option>Audio</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Status</option>
+                        <option>Aktif</option>
+                        <option>Habis</option>
+                        <option>Nonaktif</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Urutkan</option>
+                        <option>Terbaru</option>
+                        <option>Terlaris</option>
+                        <option>Harga Tertinggi</option>
+                        <option>Harga Terendah</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid-extended">
+                <div class="product-card-extended">
+                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="iPhone 13 Pro">
+                    <div class="product-details">
+                        <div class="product-info">
+                            <h3>iPhone 13 Pro</h3>
+                            <span class="status active">Aktif</span>
+                            <p class="price">Rp 100.000/hari</p>
+                            <p class="stock">Stok: 5 unit</p>
+                        </div>
+                        <div class="product-stats">
+                            <div class="stat">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>150 Disewa</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (120 ulasan)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-action"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="btn-action"><i class="fas fa-copy"></i> Duplikat</button>
+                        <button class="btn-action delete"><i class="fas fa-trash"></i> Hapus</button>
+                    </div>
+                </div>
+                <!-- Repeat product cards -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span>...</span>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
