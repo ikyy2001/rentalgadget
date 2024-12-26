@@ -3,48 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Rental - Rental Gadget</title>
-    <link rel="stylesheet" href="rentalform.css">
+    <title>Rental Form - KayyRental Premium Gadget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Kayy Rental</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product-detail.html">Produk</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-left">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-mobile-alt"></i>
+                    Download App
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-store"></i>
+                    Seller Center
+                </a>
+            </div>
+            <div class="announcement-right">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-headset"></i>
+                    Support
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-globe"></i>
+                    ID | English
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                KayyRental
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for premium gadgets to rent...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-icon">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="far fa-bell"></i>
+                    <span class="badge">2</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">1</span>
+                </a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
     </header>
 
-    <div class="rental-form-container">
-        <h2>Form Rental Gadget</h2>
-        <form action="confirmation.html" method="POST">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="product">Produk:</label>
-            <select id="product" name="product" required>
-                <option value="gadget1">Gadget 1</option>
-                <option value="gadget2">Gadget 2</option>
-                <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
-            </select>
-            <label for="start-date">Tanggal Mulai:</label>
-            <input type="date" id="start-date" name="start-date" required>
-            <label for="end-date">Tanggal Akhir:</label>
-            <input type="date" id="end-date" name="end-date" required>
-            <button type="submit">Sewa Sekarang</button>
-        </form>
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 Kayy Rental. All rights reserved.</p>
+    <main class="rental-main">
+        <div class="rental-container">
+            <div class="rental-content">
+                <div class="rental-details">
+                    <h1>Rental Form</h1>
+                    <div class="selected-product" id="selectedProduct">
+                        <div class="product-preview">
+                            <img src="/api/placeholder/400/320" alt="Selected Product" id="productImage">
+                        </div>
+                        <div class="product-info">
+                            <h2 id="productName">Select a Product</h2>
+                            <p id="productDescription">Product description will appear here</p>
+                            <p class="price" id="productPrice">Price: <span>-</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rental-form">
+                    <form id="rentalForm" action="/submit-rental" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Select Product</label>
+                            <select id="product" name="product" required>
+                                <option value="">Choose a product</option>
+                                <option value="iphone14">iPhone 14 Pro</option>
+                                <option value="s23ultra">Samsung S23 Ultra</option>
+                                <option value="pixel7">Google Pixel 7 Pro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-dates">
+                            <div class="form-group">
+                                <label for="startDate">Start Date</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="endDate">End Date</label>
+                                <input type="date" id="endDate" name="endDate" required>
+                            </div>
+                        </div>
+
+                        <div class="rental-summary">
+                            <h3>Rental Summary</h3>
+                            <div class="summary-item">
+                                <span>Duration:</span>
+                                <span id="duration">0 days</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Daily Rate:</span>
+                                <span id="dailyRate">Rp 0</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total Amount:</span>
+                                <span id="totalAmount">Rp 0</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-check"></i>
+                            Confirm Rental
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About KayyRental</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Install App</h3>
+                <ul>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                    <li><a href="#">Desktop App</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 KayyRental. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        const products = {
+            iphone14: {
+                name: 'iPhone 14 Pro',
+                description: 'Latest iPhone featuring a 48MP camera system, A16 Bionic chip, and Dynamic Island. Perfect for photography and high-performance tasks.',
+                price: 150000,
+                image: '/api/placeholder/400/320'
+            },
+            s23ultra: {
+                name: 'Samsung S23 Ultra',
+                description: 'Flagship Android device with S-Pen support, 200MP camera, and powerful Snapdragon 8 Gen 2 processor. Ideal for productivity and creativity.',
+                price: 130000,
+                image: '/api/placeholder/400/320'
+            },
+            pixel7: {
+                name: 'Google Pixel 7 Pro',
+                description: 'Google\'s premium smartphone with advanced AI features, exceptional camera capabilities, and pure Android experience.',
+                price: 120000,
+                image: '/api/placeholder/400/320'
+            }
+        };
+
+        document.getElementById('product').addEventListener('change', function(e) {
+            const product = products[e.target.value];
+            if (product) {
+                document.getElementById('productName').textContent = product.name;
+                document.getElementById('productDescription').textContent = product.description;
+                document.getElementById('productPrice').innerHTML = `Price: <span>Rp ${product.price.toLocaleString()}/day</span>`;
+                document.getElementById('productImage').src = product.image;
+                document.getElementById('dailyRate').textContent = `Rp ${product.price.toLocaleString()}`;
+                calculateTotal();
+            }
+        });
+
+        function calculateTotal() {
+            const startDate = new Date(document.getElementById('startDate').value);
+            const endDate = new Date(document.getElementById('endDate').value);
+            const product = products[document.getElementById('product').value];
+
+            if (startDate && endDate && product) {
+                const duration = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+                const total = duration * product.price;
+
+                document.getElementById('duration').textContent = `${duration} days`;
+                document.getElementById('totalAmount').textContent = `Rp ${total.toLocaleString()}`;
+            }
+        }
+
+        document.getElementById('startDate').addEventListener('change', calculateTotal);
+        document.getElementById('endDate').addEventListener('change', calculateTotal);
+    </script>
 </body>
 </html>

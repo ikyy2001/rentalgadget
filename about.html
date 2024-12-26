@@ -3,67 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Rental Gadget</title>
-    <link rel="stylesheet" href="about.css">
+    <title>About Us - Rental Gadget</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Rental Gadget</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product-detail.html">Produk</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="about-container">
-            <h2>Tentang Kami</h2>
-            <p>Rental Gadget adalah penyedia layanan rental gadget terkemuka dengan berbagai pilihan produk terbaru.</p>
-            <p>Visi kami adalah memberikan kemudahan bagi pelanggan dalam menyewa gadget berkualitas.</p>
-            <blockquote>
-                <p>Tim Rental Gadget hadir untuk membantu Anda menikmati teknologi terbaru tanpa perlu khawatir dengan biaya besar. Kami menyediakan berbagai pilihan gadget berkualitas untuk kebutuhan sehari-hari, pekerjaan, hingga hiburan.
-
-                    Dengan layanan yang cepat, mudah, dan fleksibel, kami percaya bahwa setiap orang layak mendapatkan akses ke gadget terbaik kapan saja. Pilih gadget Anda hari ini, gunakan sesuai kebutuhan, dan nikmati kemudahan hidup di ujung jari Anda!</p>
-                <cite>- Tim Rental Gadget</cite>
-            </blockquote>
-            <div class="timeline">
-                <h3>Timeline Perusahaan</h3>
-                <div class="timeline-item">
-                    <span class="year">2018</span>
-                    <p>Pendirian PT Rental Gadget.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2019</span>
-                    <p>Peluncuran layanan pertama.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2020</span>
-                    <p>Ekspansi ke kota-kota besar.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2021</span>
-                    <p>Menambah variasi produk.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2022</span>
-                    <p>Mendapatkan penghargaan industri.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2023</span>
-                    <p>Memperluas layanan ke luar negeri.</p>
-                </div>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-left">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-phone"></i> +62 123 4567 890
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-envelope"></i> info@rentalgadget.com
+                </a>
             </div>
-        </section>
+            <div class="announcement-right">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-truck"></i> Free Delivery
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i> Rental Gadget
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for gadgets...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="/cart" class="action-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="/account" class="action-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="/login" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <main class="about-main">
+        <div class="about-container">
+            <section class="about-hero">
+                <h1>About Rental Gadget</h1>
+                <p>Your Trusted Partner in Technology Solutions</p>
+            </section>
+
+            <section class="about-content">
+                <div class="about-story">
+                    <h2>Our Story</h2>
+                    <p>Since 2018, Rental Gadget has been at the forefront of technology accessibility, providing high-quality gadget rental solutions to individuals and businesses across Indonesia.</p>
+                </div>
+
+                <div class="about-mission">
+                    <div class="mission-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Mission</h3>
+                        <p>To provide accessible, cutting-edge technology solutions through flexible rental services that empower our customers to achieve more.</p>
+                    </div>
+                    <div class="mission-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Vision</h3>
+                        <p>To become the leading technology rental platform in Southeast Asia, known for excellence, innovation, and customer satisfaction.</p>
+                    </div>
+                </div>
+
+                <div class="about-timeline">
+                    <h2>Our Journey</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2018</h3>
+                                <p>Founded in Jakarta</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2019</h3>
+                                <p>Launched first rental service</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2020</h3>
+                                <p>Expanded to major cities</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2021</h3>
+                                <p>Product line expansion</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2022</h3>
+                                <p>Industry recognition</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2023</h3>
+                                <p>International expansion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Rental Gadget. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rental Gadget. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

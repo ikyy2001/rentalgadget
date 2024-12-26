@@ -3,33 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfirmasi Sewa - Kayy Rental</title>
-    <link rel="stylesheet" href="confirmation.css">
+    <title>Rental Confirmation - KayyRental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Kayy Rental</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product-detail.html">Produk</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="confirmation-container">
-        <h2>Terima Kasih!</h2>
-        <p>Form rental Anda telah berhasil dikirim.</p>
-        <p>Silakan periksa email Anda untuk konfirmasi lebih lanjut.</p>
-        <a href="index.html" class="button">Kembali ke Beranda</a>
+    <!-- Header and announcement bar same as other pages -->
+    [ <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-left">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-mobile-alt"></i>
+                    Download App
+                </a>
+                <a href="seller center.html" class="announcement-link">
+                    <i class="fas fa-store"></i>
+                    Seller Center
+                </a>
+            </div>
+            <div class="announcement-right">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-headset"></i>
+                    Support
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-globe"></i>
+                    ID | English
+                </a>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Kayy Rental. All rights reserved.</p>
-    </footer>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                KayyRental
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for premium gadgets to rent...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-icon">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="far fa-bell"></i>
+                    <span class="badge">2</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">1</span>
+                </a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="confirmation-main">
+        <div class="confirmation-container">
+            <div class="confirmation-card">
+                <div class="confirmation-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h1>Rental Confirmed!</h1>
+                    <p>Order #KR24856</p>
+                </div>
+
+                <div class="confirmation-details">
+                    <div class="confirmation-section">
+                        <h2>Rental Details</h2>
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <span class="label">Product</span>
+                                <span class="value" id="productName">iPhone 14 Pro</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Duration</span>
+                                <span class="value" id="duration">7 Days</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Start Date</span>
+                                <span class="value" id="startDate">26 Dec 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">End Date</span>
+                                <span class="value" id="endDate">2 Jan 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="confirmation-section">
+                        <h2>Payment Summary</h2>
+                        <div class="payment-summary">
+                            <div class="summary-row">
+                                <span>Daily Rate</span>
+                                <span>Rp 150.000</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Duration</span>
+                                <span>7 days</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Insurance Fee</span>
+                                <span>Rp 50.000</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total Amount</span>
+                                <span>Rp 1.100.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="next-steps">
+                        <h2>Next Steps</h2>
+                        <div class="steps-grid">
+                            <div class="step">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>Complete Payment</h3>
+                                <p>Please complete your payment within 24 hours</p>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-id-card"></i>
+                                <h3>Prepare Documents</h3>
+                                <p>Have your ID and deposit ready for pickup</p>
+                            </div>
+                            <div class="step">
+                                <i class="fas fa-box"></i>
+                                <h3>Pickup Device</h3>
+                                <p>Visit our store at the scheduled time</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="confirmation-actions">
+                        <a href="index.html" class="primary-button">
+                            <i class="fas fa-wallet"></i>
+                            Complete Payment
+                        </a>
+                        <a href="index.html" class="secondary-button">
+                            <i class="fas fa-home"></i>
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer same as other pages -->
+    [Previous footer code]
 </body>
 </html>
