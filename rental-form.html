@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Rental - Rental Gadget</title>
+    <link rel="stylesheet" href="rentalform.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Kayy Rental</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-detail.html">Produk</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rental-form-container">
+        <h2>Form Rental Gadget</h2>
+        <form action="confirmation.html" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="product">Produk:</label>
+            <select id="product" name="product" required>
+                <option value="gadget1">Gadget 1</option>
+                <option value="gadget2">Gadget 2</option>
+                <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+            </select>
+            <label for="start-date">Tanggal Mulai:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <label for="end-date">Tanggal Akhir:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            <button type="submit">Sewa Sekarang</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Kayy Rental. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

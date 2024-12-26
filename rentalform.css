@@ -1,0 +1,122 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    padding: 1.2rem 7%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Rental Form Container */
+.rental-form-container {
+    max-width: 600px;
+    margin: 100px auto; /* Tambahkan margin atas untuk menghindari tumpang tindih dengan navbar */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.rental-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366; /* Biru gelap */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2193b0; /* Warna tombol */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6dd5ed; /* Warna tombol saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Biru gelap */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

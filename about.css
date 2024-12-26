@@ -1,0 +1,150 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    padding: 1.2rem 7%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 70%;
+}
+
+/* Special buttons in nav */
+nav ul li:nth-last-child(2) a,
+nav ul li:last-child a {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    margin-left: 1rem;
+}
+
+nav ul li:nth-last-child(2) a:hover,
+nav ul li:last-child a:hover {
+    background: #fff;
+    color: #2193b0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about-container {
+    max-width: 800px;
+    margin: 100px auto; /* Tambahkan margin atas untuk menghindari tumpang tindih dengan navbar */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366; /* Biru gelap */
+}
+
+.about-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+blockquote {
+    background-color: #e0f7fa; /* Biru muda */
+    border-left: 5px solid #007bbd; /* Biru sedang */
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.timeline {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.timeline-item {
+    margin: 10px 0;
+}
+
+.year {
+    font-weight: bold;
+    color: #007bbd; /* Biru sedang */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Biru gelap */
+    color: #fff;
+}

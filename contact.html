@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Rental Gadget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Rental Gadget</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-detail.html">Produk</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="contact-container">
+        <h2>Kontak Kami</h2>
+        <form action="confirmation.html" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
