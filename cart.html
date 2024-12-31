@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Sewa - KayyRental</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-left">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-mobile-alt"></i>
+                    Download App
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-store"></i>
+                    Seller Center
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-percent"></i>
+                    Promo
+                </a>
+            </div>
+            <div class="announcement-right">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-headset"></i>
+                    Support
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-globe"></i>
+                    ID | English
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                KayyRental
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Cari gadget premium untuk disewa...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-icon" title="Wishlist">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="action-icon" title="Notifications">
+                    <i class="far fa-bell"></i>
+                    <span class="badge">2</span>
+                </a>
+                <a href="#" class="action-icon" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">3</span>
+                </a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="cart-header">
+            <h1>Keranjang Sewa</h1>
+            <p class="cart-count">3 items in cart</p>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="cart-item-image">
+                        <img src="/api/placeholder/400/320" alt="MacBook Pro M2">
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="item-info">
+                            <h3>MacBook Pro M2 2023</h3>
+                            <p class="item-specs">16GB RAM | 512GB SSD | Space Gray</p>
+                        </div>
+                        <div class="rental-duration">
+                            <label for="duration-1">Durasi Sewa:</label>
+                            <select id="duration-1" class="duration-select">
+                                <option value="1">1 Hari</option>
+                                <option value="3">3 Hari</option>
+                                <option value="7">7 Hari</option>
+                                <option value="30">30 Hari</option>
+                            </select>
+                        </div>
+                        <div class="price-info">
+                            <p class="price">Rp 250.000<span>/hari</span></p>
+                            <div class="quantity-controls">
+                                <label for="quantity-1">Jumlah:</label>
+                                <div class="quantity-wrapper">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" id="quantity-1" value="1" min="1" class="quantity-input">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="save-for-later">
+                                <i class="far fa-heart"></i>
+                                Simpan
+                            </button>
+                            <button class="remove-button">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="cart-item-image">
+                        <img src="/api/placeholder/400/320" alt="Sony A7 III">
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="item-info">
+                            <h3>Sony A7 III Kit</h3>
+                            <p class="item-specs">24-70mm f/2.8 | Include Memory 64GB</p>
+                        </div>
+                        <div class="rental-duration">
+                            <label for="duration-2">Durasi Sewa:</label>
+                            <select id="duration-2" class="duration-select">
+                                <option value="1">1 Hari</option>
+                                <option value="3">3 Hari</option>
+                                <option value="7">7 Hari</option>
+                                <option value="30">30 Hari</option>
+                            </select>
+                        </div>
+                        <div class="price-info">
+                            <p class="price">Rp 200.000<span>/hari</span></p>
+                            <div class="quantity-controls">
+                                <label for="quantity-2">Jumlah:</label>
+                                <div class="quantity-wrapper">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" id="quantity-2" value="1" min="1" class="quantity-input">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="save-for-later">
+                                <i class="far fa-heart"></i>
+                                Simpan
+                            </button>
+                            <button class="remove-button">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Ringkasan Pesanan</h2>
+                <div class="summary-items">
+                    <div class="summary-row">
+                        <span>Subtotal (3 items)</span>
+                        <span>Rp 450.000</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Biaya Layanan</span>
+                        <span>Rp 10.000</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Asuransi</span>
+                        <span>Rp 25.000</span>
+                    </div>
+                </div>
+                <div class="promo-code">
+                    <input type="text" placeholder="Masukkan kode promo" class="promo-input">
+                    <button class="apply-promo">Terapkan</button>
+                </div>
+                <div class="total-section">
+                    <div class="summary-row total">
+                        <span>Total Pembayaran</span>
+                        <span id="total-price">Rp 485.000</span>
+                    </div>
+                    <small class="tax-note">*Harga sudah termasuk PPN</small>
+                </div>
+                <button class="checkout-button">
+                    <i class="fas fa-lock"></i>
+                    Lanjutkan ke Pembayaran
+                </button>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <h2>Rekomendasi untuk Anda</h2>
+            <div class="product-grid">
+                <!-- Add product cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 KayyRental. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Quantity Controls
+        document.querySelectorAll('.quantity-wrapper').forEach(wrapper => {
+            const input = wrapper.querySelector('.quantity-input');
+            const minusBtn = wrapper.querySelector('.minus');
+            const plusBtn = wrapper.querySelector('.plus');
+
+            minusBtn.addEventListener('click', () => {
+                const currentValue = parseInt(input.value);
+                if (currentValue > 1) {
+                    input.value = currentValue - 1;
+                    updateTotalPrice();
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                const currentValue = parseInt(input.value);
+                input.value = currentValue + 1;
+                updateTotalPrice();
+            });
+
+            input.addEventListener('change', updateTotalPrice);
+        });
+
+        // Remove Item
+        document.querySelectorAll('.remove-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const item = e.target.closest('.cart-item');
+                item.remove();
+                updateTotalPrice();
+                updateCartCount();
+            });
+        });
+
+        // Update Total Price
+        function updateTotalPrice() {
+            let total = 0;
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const priceText = item.querySelector('.price').innerText;
+                const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+                const quantity = parseInt(item.querySelector('.quantity-input').value);
+                const duration = parseInt(item.querySelector('.duration-select').value);
+                total += price * quantity * duration;
+            });
+            
+            // Add service fee and insurance
+            total += 35000; // 10000 (service) + 25000 (insurance)
+            
+            document.getElementById('total-price').innerText = 'Rp ' + total.toLocaleString();
+        }
+
+        // Update Cart Count
+        function updateCartCount() {
+            const itemCount = document.querySelectorAll('.cart-item').length;
+            document.querySelector('.cart-count').innerText = `${itemCount} items in cart`;
+            document.querySelector('.summary-row').firstElementChild.innerText = 
+                `Subtotal (${itemCount} items)`;
+        }
+
+        // Duration Change
+        document.querySelectorAll('.duration-select').forEach(select => {
+            select.addEventListener('change', updateTotalPrice);
+        });
+    </script>
+</body>
+</html>
