@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas Rental Gadget</title>
+    <link rel="stylesheet" href="komunitas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Komunitas Rental Gadget</h1>
+                <p class="header-description">Berbagi pengalaman, bertanya, dan berdiskusi tentang gadget yang Anda sewa.</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="grid-container">
+                <section class="card guidelines">
+                    <div class="card-header">
+                        <i class="fas fa-book-reader"></i>
+                        <h2>Panduan Komunitas</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li><i class="fas fa-plus-circle"></i> Buat Topik Baru: Mulai diskusi baru dengan mudah</li>
+                            <li><i class="fas fa-comment"></i> Beri Komentar: Bagikan pendapat Anda</li>
+                            <li><i class="fas fa-flag"></i> Laporkan Isu: Bantu kami menjaga komunitas</li>
+                            <li><i class="fas fa-bell"></i> Ikuti Diskusi: Dapatkan notifikasi update</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="card rules">
+                    <div class="card-header">
+                        <i class="fas fa-gavel"></i>
+                        <h2>Aturan Komunitas</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Jaga Kebersihan: Gunakan bahasa yang sopan</li>
+                            <li><i class="fas fa-heart"></i> Berkontribusi Positif: Berbagi informasi bermanfaat</li>
+                            <li><i class="fas fa-user-shield"></i> Hormati Privasi: Jaga kerahasiaan data pribadi</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <section class="card topics-section">
+                <div class="card-header">
+                    <i class="fas fa-comments"></i>
+                    <h2>Topik Terbaru</h2>
+                </div>
+                <div class="card-content">
+                    <div class="topic">
+                        <div class="topic-header">
+                            <h3>Diskusi tentang Pengalaman Rental Gadget</h3>
+                            <span class="topic-meta">
+                                <i class="fas fa-user"></i> John Doe
+                                <i class="fas fa-calendar"></i> 30 Des 2024
+                                <i class="fas fa-comment"></i> 5 Komentar
+                            </span>
+                        </div>
+                        <div class="topic-comments hidden">
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>John Doe</span>
+                                </div>
+                                <p>Saya baru saja menyewa headset VR dan pengalamannya luar biasa!</p>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Jane Smith</span>
+                                </div>
+                                <p>Saya setuju, headset VR sangat nyaman dan detail grafisnya bagus.</p>
+                            </div>
+                        </div>
+                        <button class="btn-primary toggle-comments">
+                            <i class="fas fa-chevron-down"></i> Lihat Komentar
+                        </button>
+                    </div>
+
+                    <div class="topic">
+                        <div class="topic-header">
+                            <h3>Rekomendasi Gadget untuk Streaming</h3>
+                            <span class="topic-meta">
+                                <i class="fas fa-user"></i> Jane Smith
+                                <i class="fas fa-calendar"></i> 29 Des 2024
+                                <i class="fas fa-comment"></i> 3 Komentar
+                            </span>
+                        </div>
+                        <div class="topic-comments hidden">
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Jane Smith</span>
+                                </div>
+                                <p>Saya sarankan menggunakan laptop dengan spesifikasi tinggi untuk streaming.</p>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>John Doe</span>
+                                </div>
+                                <p>Saya setuju, laptop dengan GPU NVidia GTX 1660 Ti sangat cocok.</p>
+                            </div>
+                        </div>
+                        <button class="btn-primary toggle-comments">
+                            <i class="fas fa-chevron-down"></i> Lihat Komentar
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card create-topic">
+                <div class="card-header">
+                    <i class="fas fa-edit"></i>
+                    <h2>Buat Topik Baru</h2>
+                </div>
+                <div class="card-content">
+                    <form id="createTopicForm" class="topic-form">
+                        <div class="form-group">
+                            <label for="topicTitle">
+                                <i class="fas fa-heading"></i> Judul Topik:
+                            </label>
+                            <input type="text" id="topicTitle" name="topicTitle" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="topicContent">
+                                <i class="fas fa-paragraph"></i> Isi Topik:
+                            </label>
+                            <textarea id="topicContent" name="topicContent" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topicCategory">
+                                <i class="fas fa-tag"></i> Kategori:
+                            </label>
+                            <select id="topicCategory" name="topicCategory">
+                                <option value="gaming">Gadget Gaming</option>
+                                <option value="streaming">Gadget Streaming</option>
+                                <option value="photography">Gadget Pemotretan</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Kirim
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="card report-section">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h2>Laporan Masalah</h2>
+                </div>
+                <div class="card-content">
+                    <p>Jika Anda menemui masalah teknis atau konten yang melanggar aturan, silakan hubungi kami melalui:</p>
+                    <div class="contact-info">
+                        <a href="mailto:email@rentalgadget.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> email@rentalgadget.com
+                        </a>
+                        <a href="tel:+62123456789" class="contact-link">
+                            <i class="fas fa-phone"></i> +62 123 456 789
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Rental Gadget. Semua hak dilindungi undang-undang.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-comments').forEach(button => {
+            button.addEventListener('click', function() {
+                const comments = this.previousElementSibling;
+                const icon = this.querySelector('i');
+                
+                comments.classList.toggle('hidden');
+                if (comments.classList.contains('hidden')) {
+                    this.innerHTML = '<i class="fas fa-chevron-down"></i> Lihat Komentar';
+                } else {
+                    this.innerHTML = '<i class="fas fa-chevron-up"></i> Sembunyikan Komentar';
+                }
+            });
+        });
+
+        document.getElementById('createTopicForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const title = document.getElementById('topicTitle').value;
+            const content = document.getElementById('topicContent').value;
+            
+            const newTopic = document.createElement('div');
+            newTopic.className = 'topic';
+            newTopic.innerHTML = `
+                <div class="topic-header">
+                    <h3>${title}</h3>
+                    <span class="topic-meta">
+                        <i class="fas fa-user"></i> Anda
+                        <i class="fas fa-calendar"></i> ${new Date().toLocaleDateString('id-ID')}
+                        <i class="fas fa-comment"></i> 1 Komentar
+                    </span>
+                </div>
+                <div class="topic-comments hidden">
+                    <div class="comment">
+                        <div class="comment-author">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Anda</span>
+                        </div>
+                        <p>${content}</p>
+                    </div>
+                </div>
+                <button class="btn-primary toggle-comments">
+                    <i class="fas fa-chevron-down"></i> Lihat Komentar
+                </button>
+            `;
+
+            document.querySelector('.topics-section .card-content').insertBefore(
+                newTopic,
+                document.querySelector('.topics-section .card-content').firstChild
+            );
+
+            this.reset();
+            
+            // Add event listener to new toggle button
+            newTopic.querySelector('.toggle-comments').addEventListener('click', function() {
+                const comments = this.previousElementSibling;
+                comments.classList.toggle('hidden');
+                if (comments.classList.contains('hidden')) {
+                    this.innerHTML = '<i class="fas fa-chevron-down"></i> Lihat Komentar';
+                } else {
+                    this.innerHTML = '<i class="fas fa-chevron-up"></i> Sembunyikan Komentar';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
