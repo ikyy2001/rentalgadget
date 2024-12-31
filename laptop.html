@@ -3,98 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartphone - Rental Gadget</title>
+    <title>Smartphones - KayyRental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <a href="#" class="top-link">Download App</a>
-                <a href="#" class="top-link">Seller Center</a>
-                <a href="#" class="top-link">Follow us on Social Media</a>
-                <div class="top-right">
-                    <a href="#" class="top-link">Notifikasi</a>
-                    <a href="#" class="top-link">Bantuan</a>
-                    <a href="#" class="top-link">Bahasa Indonesia</a>
-                </div>
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="announcement-left">
+                <a href="https://play.google.com/store/apps/details?id=id.pintro.cash&hl=en" class="announcement-link">
+                    <i class="fas fa-mobile-alt"></i>
+                    Download App
+                </a>
+                <a href="seller center.html" class="announcement-link">
+                    <i class="fas fa-store"></i>
+                    Seller Center
+                </a>
+            </div>
+            <div class="announcement-right">
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-headset"></i>
+                    Support
+                </a>
+                <a href="#" class="announcement-link">
+                    <i class="fas fa-globe"></i>
+                    ID | English
+                </a>
             </div>
         </div>
-        <div class="navbar">
-            <div class="container">
-                <a href="/" class="logo">KayyRental</a>
-                <div class="search-bar">
-                    <input type="text" placeholder="Cari gadget untuk disewa...">
-                    <button class="search-button">🔍</button>
-                </div>
-                <div class="nav-links">
-                    <a href="smartphone.html" class="nav-link">Smartphone</a>
-                    <a href="laptop.html" class="nav-link">Laptop</a>
-                    <a href="kamera.html" class="nav-link">Kamera</a>
-                    <a href="gaming.html" class="nav-link">Gaming</a>
-                    <a href="audio.html" class="nav-link">Audio</a>
-                </div>
-                <div class="action-buttons">
-                    <a href="#" class="action-button">❤️</a>
-                    <a href="#" class="action-button">🔔</a>
-                    <a href="#" class="action-button">🛒</a>
-                    <a href="#" class="action-button login-button">Login</a>
-                </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                KayyRental
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for premium gadgets to rent...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-icon">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="far fa-bell"></i>
+                    <span class="badge">2</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">1</span>
+                </a>
+                <a href="login.html" class="login-btn">Login</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="produk">
-            <h2>Smartphone Terbaru</h2>
-            <div class="produk-list">
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 1">
-                    <h3>Smartphone 1</h3>
-                    <p>Harga: Rp 100.000/hari</p>
-                    <a href="product-detail.html" class="btn">Lihat Detail</a>
-                </div>
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 2">
-                    <h3>Smartphone 2</h3>
-                    <p>Harga: Rp 150.000/hari</p>
-                    <a href="smartphonedetail.html" class="btn">Lihat Detail</a>
-                </div>
+    <section class="category-header">
+        <div class="category-container">
+            <h1>Laptop</h1>
+            <p>Rent the latest Laptop from top brands</p>
+        </div>
+    </section>
 
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 2">
-                    <h3>Smartphone 2</h3>
-                    <p>Harga: Rp 150.000/hari</p>
-                    <a href="smartphonedetail.html" class="btn">Lihat Detail</a>
+    <section class="products-section">
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/g14-b-006_w_light.jpg" alt="iPhone 14 Pro">
+                    <div class="product-badge">New</div>
                 </div>
-
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 2">
-                    <h3>Smartphone 2</h3>
-                    <p>Harga: Rp 150.000/hari</p>
-                    <a href="product-detail.html" class="btn">Lihat Detail</a>
+                <div class="product-details">
+                    <h3>ROG Zephyrus G14</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.9 (156)
+                        </span>
+                        <span class="product-availability">In Stock</span>
+                    </div>
+                    <p class="product-price">Rp 550.000<span>/day</span></p>
+                    <a href="rental-form.html" class="rent-button">Rent Now</a>
                 </div>
-
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 2">
-                    <h3>Smartphone 2</h3>
-                    <p>Harga: Rp 150.000/hari</p>
-                    <a href="product-detail.html" class="btn">Lihat Detail</a>
-                </div>
-
-                <div class="produk-item">
-                    <img src="image/all_colors__fdpduog7urm2_xlarge.jpg" alt="Smartphone 2">
-                    <h3>Smartphone 2</h3>
-                    <p>Harga: Rp 150.000/hari</p>
-                    <a href="product-detail.html" class="btn">Lihat Detail</a>
-                </div>
-                <!-- Tambahkan lebih banyak produk smartphone sesuai kebutuhan -->
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Rental Gadget. All rights reserved.</p>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/616e7ad67ecb0.png" alt="Samsung S23 Ultra">
+                    <div class="product-badge">Popular</div>
+                </div>
+                <div class="product-details">
+                    <h3>MacBook M1 Pro</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.8 (142)
+                        </span>
+                        <span class="product-availability">In Stock</span>
+                    </div>
+                    <p class="product-price">Rp 350.000<span>/day</span></p>
+                    <a href="#" class="rent-button">Rent Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/g14-b-006_w_light.jpg" alt="Google Pixel 7 Pro">
+                </div>
+                <div class="product-details">
+                    <h3>Rog Zephyrus G15</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.7 (98)
+                        </span>
+                        <span class="product-availability">Limited</span>
+                    </div>
+                    <p class="product-price">Rp 130.000<span>/day</span></p>
+                    <a href="#" class="rent-button">Rent Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/616e7ad67ecb0.png" alt="OnePlus 11">
+                </div>
+                <div class="product-details">
+                    <h3>Macbook M1</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.8 (76)
+                        </span>
+                        <span class="product-availability">In Stock</span>
+                    </div>
+                    <p class="product-price">Rp 120.000<span>/day</span></p>
+                    <a href="#" class="rent-button">Rent Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/g14-b-006_w_light.jpg" alt="Xiaomi 13 Pro">
+                </div>
+                <div class="product-details">
+                    <h3>ROG Zephyrus G16</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.6 (64)
+                        </span>
+                        <span class="product-availability">In Stock</span>
+                    </div>
+                    <p class="product-price">Rp 110.000<span>/day</span></p>
+                    <a href="#" class="rent-button">Rent Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/616e7ad67ecb0.png" alt="Oppo Find X6 Pro">
+                </div>
+                <div class="product-details">
+                    <h3>Macbook M2</h3>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            4.7 (82)
+                        </span>
+                        <span class="product-availability">Limited</span>
+                    </div>
+                    <p class="product-price">Rp 125.000<span>/day</span></p>
+                    <a href="#" class="rent-button">Rent Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About KayyRental</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Install App</h3>
+                <ul>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                    <li><a href="#">Desktop App</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 KayyRental. All rights reserved.</p>
+        </div>
     </footer>
 </body>
-</html>
+</html>   
